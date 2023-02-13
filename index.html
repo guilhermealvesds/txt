@@ -35,5 +35,21 @@ body {
 <p>CACAUSHOW\anogueirao.unous</p>
 <p>wm809v0Ou4&o</p>
 </div>
+<input type="text" id="searchTxt">
+<button id="btn">Salvar</button>
+<p id="demo"></p>
+<script>
+// Retrieve
+document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+
+ function test() {
+      // Set Item
+      localStorage.setItem("lastname", document.getElementById("searchTxt").value);
+    }
+ let btn = document.getElementById("btn");
+    btn.addEventListener('click', event => {
+      test();
+    });
+</script>
 </body>
 </html>
